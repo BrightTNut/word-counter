@@ -9,7 +9,7 @@
         body{padding: 50px 100px;}
         h1{text-align: center;background-color: rgb(118, 235, 235);color: beige;
         margin: 0px;padding: 10px;}
-        #textbox{width: 99.3%;height: 500px;font-size: 20px;color: black;}
+       
         p{text-align: center;background-color: rgb(68, 177, 177);font-size: 25px;font-weight: 100;color:wheat;
         padding: 2px;margin: 5px;}
     </style>
@@ -27,12 +27,12 @@
             let char = text.length;
             document.getElementById("char").innerHTML = char;
   
-            text= text.trim();//to remove extra space brfore & after sentece
+            text= text.trim();//to remove extra space before & after sentences
             let words = text.split(" ");
             var cleanlist = words.filter(function(elm){
              return elm != "";
             })
-             document.getElementById("word").innerHTML= cleanlist.length;
+              document.getElementById("word").innerHTML= cleanlist.length;
         })
     </script>
 </body>
